@@ -47,3 +47,9 @@ m1 <- makeCacheMatrix(matrix(c(1,2,3,4), nrow = 2, ncol = 2))
 m1$get()
 cacheSolve(m1)
 m1$get_inv()
+
+
+m2 <- makeCacheMatrix(matrix(c(1,2,3,4,-2,-8,4,5,10), nrow = 3, ncol = 3))
+m2$get()
+cacheSolve(m2)
+m2$get_inv()
